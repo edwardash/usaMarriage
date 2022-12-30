@@ -61,6 +61,8 @@ function App() {
                                 <Route path="/:state/:countyName" exact component={StateDetailPage} />
 
 
+                             
+                             
                                 {/* static pages */}
                                 <Route path="/family-laws" exact component={FamilyLaws} />
                                 <Route path="/immigration-laws" exact component={ImmigrationLaws} />
