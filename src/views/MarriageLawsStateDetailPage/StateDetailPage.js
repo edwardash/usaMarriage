@@ -38,7 +38,10 @@ const StateDetailPage = () => {
         "pagination": 10
       }
 
-      setcountyListData(USAGENCYDATA.slice(0, 10));
+      let one = Math.floor(Math.random() * (USAGENCYDATA.length - 1));
+      let two = Math.floor(Math.random() * (USAGENCYDATA.length - 1));
+
+      setcountyListData(USAGENCYDATA.slice(one > two ? two : one, one > two ? one : two));
       // apiConnector("searchResult", data)
       //   .then((response) => {
       //     if (response.status === SUCCESS) {
